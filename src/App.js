@@ -177,8 +177,8 @@ function App() {
                     <p className="value">1234567890</p>
                   </div>
                   <div className="info butDiv">
-                    <button className='btn' >Edit</button>
-                    <button className='btn' >Delete</button>
+                    <button className='btn' >Not Editable</button>
+                    <button className='btn' >Not Deletable</button>
                   </div>
                 </div>
               </div>
