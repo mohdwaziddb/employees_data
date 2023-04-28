@@ -147,7 +147,8 @@ function App() {
         {/* getting data from api */}
         {jdata.map((emp, i) => {
           return (
-            <div key={i} className="floating-div">
+            <div>
+              <div className="floating-div">
 
               <div className="card">
                 <div className="card-header">
@@ -155,33 +156,70 @@ function App() {
                 </div>
 
                 <div className='divImg'>
-                  <img src={emp.photo} alt="img" />
+                  <img src="https://drive.google.com/uc?export=view&id=1QUzENJFMkW8-KZGKwctYYSYJW3dyWj7F" alt="img" />
                 </div>
 
                 <div className="card-body">
                   <div className="info">
                     <p className="label">Name : </p>
-                    <p className="value">{emp.name}</p>
+                    <p className="value">Mohd Wazid</p>
                   </div>
                   <div className="info">
                     <p className="label">Age : </p>
-                    <p className="value">{emp.age}</p>
+                    <p className="value">28</p>
                   </div>
                   <div className="info">
                     <p className="label">Email : </p>
-                    <p className="value">{emp.email}</p>
+                    <p className="value">mohd.wazid.db@gmail.com</p>
                   </div>
                   <div className="info">
                     <p className="label">Mobile No. : </p>
-                    <p className="value">{emp.mobileno}</p>
+                    <p className="value">1234567890</p>
                   </div>
                   <div className="info butDiv">
-                    <button className='btn' onClick={() => editUser(emp.id)}>Edit</button>
-                    <button className='btn' onClick={() => deleteUser(emp.id)}>Delete</button>
+                    <button className='btn' >Edit</button>
+                    <button className='btn' >Delete</button>
                   </div>
                 </div>
               </div>
 
+              </div>
+              <div key={i} className="floating-div">
+
+                <div className="card">
+                  <div className="card-header">
+                    <h3>Employees Details</h3>
+                  </div>
+
+                  <div className='divImg'>
+                    <img src={emp.photo} alt="img" />
+                  </div>
+
+                  <div className="card-body">
+                    <div className="info">
+                      <p className="label">Name : </p>
+                      <p className="value">{emp.name}</p>
+                    </div>
+                    <div className="info">
+                      <p className="label">Age : </p>
+                      <p className="value">{emp.age}</p>
+                    </div>
+                    <div className="info">
+                      <p className="label">Email : </p>
+                      <p className="value">{emp.email}</p>
+                    </div>
+                    <div className="info">
+                      <p className="label">Mobile No. : </p>
+                      <p className="value">{emp.mobileno}</p>
+                    </div>
+                    <div className="info butDiv">
+                      <button className='btn' onClick={() => editUser(emp.id)}>Edit</button>
+                      <button className='btn' onClick={() => deleteUser(emp.id)}>Delete</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           );
         })
