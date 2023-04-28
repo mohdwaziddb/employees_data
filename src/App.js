@@ -143,12 +143,7 @@ function App() {
           </div>
 
         </div>
-
-        {/* getting data from api */}
-        {jdata.map((emp, i) => {
-          return (
-            <div>
-              <div className="floating-div">
+        <div className="floating-div">
 
               <div className="card">
                 <div className="card-header">
@@ -184,6 +179,9 @@ function App() {
               </div>
 
               </div>
+        {/* getting data from api */}
+        {jdata.map((emp, i) => {
+          return (              
               <div key={i} className="floating-div">
 
                 <div className="card">
@@ -220,7 +218,6 @@ function App() {
                 </div>
 
               </div>
-            </div>
           );
         })
         }
